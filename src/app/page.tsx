@@ -1,6 +1,18 @@
+'use client'
+
+import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/clerk-react"
+
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>HomePage
+
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <SignOutButton />
+      </SignedIn>
+    </div>
   )
 }
 
